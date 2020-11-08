@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>James Holden - A* Visualization</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>A* Visualizer</h1>
+						<a href="index.html">Back</a>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<h2>A* Visualizer</h2>
+								<p>An application built with the Qt framework that allows users to build custom 2d environments. The user can click on the environment to build obstacles themselves or click a button to generate obstacle blocks at random. The user can select between a Uniform Cost (brute force) or A* (heuristic best first) search. The optimization that results by using an A* search over the brute force Uniform Cost search is visible in that the algorithm expands nodes that show the most promise. The visualization shows that nodes expanded under A* seem to move “towards” the solution.   </p>
+
+								<p>Below is a brief demo of the app, and the code is availible on my GitHub <a href = "https://github.com/James-Holden/a-star-visualizer">here</a> 
+
+								 <iframe width="800" height="615"
+								src="https://www.youtube.com/embed/8AGjy-nWWaY">
+								</iframe> 
+								
+								<p>This application uses the A* algorithm to plan a path within a 2 dimensional environment where the agent can move up, down, left, or right. A* can be used, however, in any searching algorithm that can be modeled as a graph of expandable nodes. </p>
+
+								<p>The Uniform Cost algorithm can be considered a brute-force approach, as it checks all possible paths from start to finish without discrimination and finishes as soon as it finds any result</p>
+
+								<p>A* check all possible paths as well, but checkes the paths that look the best first, using a heuristic. The specific hueristic used is the meaure of Euclidean distance to the goal node. Becuase this hueristic is will never overestimate its length, A* gaurentees giving the shortest path possible.</p>
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Contact</h2>
+							<dl class="alt">
+								<dt>Email</dt>
+								<dd><a href="holdenjames96@gmail.com">holdenjames96@gmail.com</a></dd>
+							</dl>
+							<dl class="alt">
+								<dt>GitHub</dt>
+								<dd><a href="https://github.com/James-Holden">https://github.com/James-Holden</a></dd>
+							</dl>
+							<dl class="alt">
+								<dt>LinkedIn</dt>
+								<dd><a href="https://www.linkedin.com/in/jamesholden96/">https://www.linkedin.com/in/jamesholden96/</a></dd>
+							</dl>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>James Holden - RRT*</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>RRT* And Dubins' Vehicles</h1>
+						<a href="index.html">Back</a>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<h2>RRT*</h2>
+								<p>My final project for the senior level AI course at the University of New Hampshire, and self developed. The project evaluates the optimization of motion planning for an agent that exists in a 2d, continuous environment. The Rapidly Exploring Random Tree (RRT*) algorithm uses random samples of the environment to generate a path from the start node to the solution. RRT* is an optimization that rewires nodes to create shorter and more logical paths.   </p>
+								<p>This was written is Python and a simple Bash script was used to run trials of the algorithm. A formal write-up is available 
+									<a href = "https://github.com/James-Holden/rrt-rrt_star-dubins/blob/master/EvaluatingRRT.pdf">here</a> 
+								, in AAAI format.</p>
+
+								<img src="images/typicallinearrrt.png">
+								<img src="images/typicallinearrrtstar.png">
+
+								<p>Above is a typical RRT exploration tree vs a typical RRT* exploration tree. </p>
+
+								<p>The RRT algorithm takes random samples of its environment and wires them together to generate paths from start to finish. While this is suitable for some uses, the paths generated are often illogical, and real-world applications may depend of shorter, more sensible paths. </p>
+
+								<p>RRT* produces more optimal solutions by wiring nodes not based on their nearest neighbors, but by the total length from start. This hueristic creates more optimal paths</p>
+
+
+
+
+								<h3>Dubins' Vehicles</h3>
+
+								
+								<p>This project evaluates the tradeoffs between performance and solution quality between RRT and RRT*. Additionally, the tradeoff is evaluated for agents whose motion is guided by a minimum turning radius (cars, bicycle, boats). The findings where that the RRT* optimization holds true for Dubins vehicles.</p>
+
+
+								<p>Below is a typical Dubins RRT result vs the RRT* optimization</p>
+								<img src="images/typicaldubinsrrt.png">
+								<img src="images/dubinsrrtstar.png"width="315" height="315">
+								
+
+
+
+
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Contact</h2>
+							<dl class="alt">
+								<dt>Email</dt>
+								<dd><a href="holdenjames96@gmail.com">holdenjames96@gmail.com</a></dd>
+							</dl>
+							<dl class="alt">
+								<dt>GitHub</dt>
+								<dd><a href="https://github.com/James-Holden">https://github.com/James-Holden</a></dd>
+							</dl>
+							<dl class="alt">
+								<dt>LinkedIn</dt>
+								<dd><a href="https://www.linkedin.com/in/jamesholden96/">https://www.linkedin.com/in/jamesholden96/</a></dd>
+							</dl>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
